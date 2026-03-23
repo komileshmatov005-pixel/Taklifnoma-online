@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <title>Taklifnoma</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+      background: black;
+      color: white;
+      text-align: center;
+    }
+    .lock-screen, .content {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .content {
+      display: none;
+      background: white;
+      color: black;
+      padding: 20px;
+    }
+    button {
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 10px;
+      background: pink;
+    }
+  </style>
+</head>
+<body>
+
+<div class="lock-screen">
+  <h2>Sizga taklifnoma keldi ❤️</h2>
+  <button onclick="openInvite()">Ochish 🔓</button>
+</div>
+
+<div class="content">
+  <h1>Komiljon va XXX</h1>
+  <p>Aziz mehmon!</p>
+  <p>Sizni to‘yimizga taklif qilamiz</p>
+  <p>📅 28-avgust 2026</p</p>
+  <p>📍 Sho'rchi tumani</p>
+</div>
+
+<script>
+function openInvite() {
+  document.querySelector('.lock-screen').style.display = 'none';
+  document.querySelector('.content').style.display = 'flex';
+}
+</script>
+
+</body>
+</html>
